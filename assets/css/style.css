@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700");
 body {
     color: #ffffff;
-    background-color: #000000af;
+    background-color: #ffffffff;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -215,8 +215,11 @@ textarea:focus {
     cursor: pointer;
 }
 #mobile-nav-toggle i {
-    color: #5b5c94;
+    color: #ffffff;
     font-weight: 900;
+}
+#mobile-nav-toggle.header-scrolled-i i{
+    color: #31bae7;
 }
 @media (max-width: 960px) {
     #mobile-nav-toggle {
@@ -380,6 +383,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     transition: all 0.5s;
     top: 0;
 }
+
 #header.header-scrolled .nav-menu a{
     color: #000;
 }
@@ -440,32 +444,41 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 .feature-area {
-    background: #898989;
+    background: #131440;
 }
 .single-feature {
-    background: #131441;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+    background: #131440;
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    min-height: 450px
 }
-@media (min-width: 770px){
+@media (max-width: 1200px){
     .single-feature {
-        min-height: 370px
+        min-height: 470px
     }
 
 }
-@media (min-width: 992px){
+@media (max-width: 968px){
     .single-feature {
-        min-height: 440px
+        min-height: 381px
     }
 
 }
+@media (max-width: 770px){
+    .single-feature {
+        min-height: 0
+    }
+
+}
+
 
 .single-feature img {
     margin-bottom: 40px;
@@ -501,7 +514,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .welcome-text {
     padding: 100px;
-    border: 10px solid #f9f9f9;
+    border: 10px solid #131440;
+}
+.welcome-text h2{
+    color: #131440;
+}
+.welcome-text p{
+    color: #131440;
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
     .welcome-text {
@@ -514,7 +533,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 .Projects-area {
-    background: #898989;
+    background: #131440;
     color: #000;
 }
 .Projects-area .single-slide {
@@ -717,6 +736,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
+.crew-area h1{
+    color: #131440;
+}
+.crew-area h3{
+    color: #131440;
+}
 .crew-area .single-doctor:hover .doctor-name {
     background: linear-gradient(to right, #21a8f3, #5149c5);
 }
@@ -807,11 +832,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 .news-area{
-    background-color: #898989;
+    background-color: #131440;
 }
 .news-area .news-date {
     color: #fff;
-    background: #244cfd;
+    background: #5bc2e3;
     padding: 12px 30px;
     display: inline-block;
     position: relative;
@@ -819,7 +844,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     left: 30px;
 }
 .news-area h3 a {
-    color: #222;
+    color: #5bc2e3;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -955,7 +980,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 .banner-area.other-page a {
-    color: #777;
+    color: #ffffff;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1499,8 +1524,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #244cfd;
     margin-right: 20px;
 }
+
 .contact-form form .left,
 .commentform-area form .left {
+    color: #131440;
     width: 48%;
     float: left;
     overflow: hidden;
@@ -2143,6 +2170,7 @@ h6 {
     background-color: #e66686;
 }
 .single-gallery-image {
+    border: 3px solid #131440;
     margin-top: 30px;
     background-repeat: no-repeat !important;
     background-position: center center !important;
@@ -2811,7 +2839,7 @@ h6 {
     opacity: 0.8;
 }
 .news-btn {
-    color: #222;
+    color: #5bc2e3;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 500;
@@ -2945,11 +2973,20 @@ h6 {
     }
 }
 .single-footer-image{
-    flex: 0 0 22%;
+    padding-left: 80px;
+
+}
+@media (max-width: 1200px){
+    .single-footer-image{
+        width:33.3%;
+    
+    }
 }
 @media (max-width: 991px){
     .single-footer-image{
         padding-bottom: 10px;
+        padding-left: 33px;
+
     }
 }
 @media (max-width: 576px){
@@ -2961,4 +2998,10 @@ h6 {
     .single-footer-image{
         padding: 10px 15px;
     }
+}
+.contact-form{
+    background-color: #131440;
+}
+.contact-form i{
+    color: #fff;
 }
