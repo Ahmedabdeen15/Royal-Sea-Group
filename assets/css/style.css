@@ -169,7 +169,7 @@ textarea:focus {
     padding: 7px 10px;
     text-decoration: none;
     display: inline-block;
-    color: #e4dbdb;
+    color: #000;
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
@@ -218,7 +218,7 @@ textarea:focus {
     color: #ffffff;
     font-weight: 900;
 }
-#mobile-nav-toggle.header-scrolled-i i{
+#mobile-nav-toggle.header-i i{
     color: #31bae7;
 }
 @media (max-width: 960px) {
@@ -362,6 +362,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 0;
     transition: all 0.5s;
     z-index: 997;
+    background: #f9f9fd;
+    transition: all 0.5s;
+    color: #000;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
     #header {
@@ -379,14 +382,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 #header.header-scrolled {
-    background: #f9f9fd;
-    transition: all 0.5s;
     top: 0;
 }
 
-#header.header-scrolled .nav-menu a{
-    color: #000;
-}
+
 @media (max-width: 673px) {
     #logo {
         margin-left: 20px;
@@ -650,86 +649,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-.patient-area .single-patient:hover {
-    background: #fff;
-    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-.patient-area .single-patient img {
-    margin-bottom: 24px;
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    margin-top: -90px;
-}
-.patient-area .appointment-form {
-    padding: 80px;
-    background-image: url("../images/patient.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .patient-area .appointment-form {
-        padding: 80px 40px;
-    }
-}
-@media (max-width: 575.98px) {
-    .patient-area .appointment-form {
-        padding: 40px 20px;
-    }
-}
-.patient-area .appointment-form:before {
-    content: "";
-    position: absolute;
-    top: -5%;
-    right: -30%;
-    width: 60%;
-    height: 110%;
-    border: 10px solid #f9f9f9;
-    z-index: -1;
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .patient-area .appointment-form:before {
-        right: -20%;
-    }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .patient-area .appointment-form:before {
-        position: inherit;
-    }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .patient-area .appointment-form:before {
-        position: inherit;
-    }
-}
-@media (max-width: 575.98px) {
-    .patient-area .appointment-form:before {
-        position: inherit;
-    }
-}
-.patient-area .appointment-form:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top right, rgba(21, 228, 253, 0.9), rgba(36, 76, 253, 0.9));
-    z-index: -1;
-}
-.patient-area .appointment-form h3 {
-    font-size: 24px !important;
-    color: #fff !important;
-}
+
+
 
 .crew-area .single-doctor:hover .content-area {
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -2970,7 +2891,7 @@ h6 {
 }
 
 .single-footer-image img{
-    height: 200px;
+    height: 150px;
 }
 @media (max-width: 768px){
     .single-footer-image img{
@@ -2983,13 +2904,35 @@ h6 {
     }
 }
 .single-footer-image{
-    padding-left: 80px;
-
+    padding-bottom: 60px;
+    max-width:max-content;
 }
-@media (max-width: 1200px){
+#map { 
+    height: 300px;
+}
+.links-section-mobile{
+    display: none;
+}
+@media (max-width: 1198px){
     .single-footer-image{
-        width:33.3%;
-    
+        max-width: 33.3%;
+        padding-left: 70px;
+        padding-bottom: 20px;
+    }
+    #map { 
+        height: 300px;
+        width: 400px;
+    }
+    .map-footer{
+        padding-left: 280px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .links-section{
+        display: none;
+    }
+    .links-section-mobile{
+        display: block;
     }
 }
 @media (max-width: 991px){
@@ -2998,20 +2941,76 @@ h6 {
         padding-left: 33px;
 
     }
+    .map-footer{
+        padding-left: 150px;
+    }
 }
-@media (max-width: 576px){
+@media (max-width: 768px){
     .single-footer-image{
         padding: 10px 20px;
     }
+    #map { 
+        height: 300px;
+        width: 400px;
+    }
+    .link-separator{
+        display: none;
+    }
 }
+@media (max-width: 764px){
+    .map-footer{
+        padding-left: 75px;
+
+    }
+}
+@media (max-width: 576px){
+    .single-footer-image img{
+        height: 90px;
+    }
+    .map-footer{
+        padding-left: 50px;
+
+    }
+}
+@media (max-width: 476px){
+    .map-footer{
+        padding-left: 30px;
+    }
+    #map { 
+        width: 350px;
+    }
+}
+
 @media (max-width: 390px){
     .single-footer-image{
         padding: 10px 15px;
     }
+    .map-footer{
+        padding-left: 40px;
+    }
+    #map { 
+        width: 300px;
+    }
+}
+@media (max-width: 330px){
+    .map-footer{
+        padding-left: 30px;
+    }
+    #map { 
+        height: 300px;
+        width: 270px;
+    }
+}
+.link-footer{
+    padding: 5px;
 }
 .contact-form{
     background-color: #131440;
 }
 .contact-form i{
     color: #fff;
+}
+
+.project-area{
+    color: #000;
 }

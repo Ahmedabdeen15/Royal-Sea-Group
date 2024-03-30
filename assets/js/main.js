@@ -23,7 +23,7 @@
             $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>');
             $('body').append('<div id="mobile-body-overly"></div>');
             $('#mobile-nav').find('.menu-has-children').prepend('<i class="lnr lnr-chevron-down"></i>');
-
+            
             $(document).on('click', '.menu-has-children i', function(e) {
             $(this).next().toggleClass('menu-item-active');
             $(this).nextAll('ul').eq(0).slideToggle();
@@ -41,11 +41,12 @@
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 if ($('body').hasClass('mobile-nav-active')) {
                 $('body').removeClass('mobile-nav-active');
-                $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
+                $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu ');
                 $('#mobile-body-overly').fadeOut();
                 }
             }
             });
+            $('#mobile-nav-toggle').addClass('header-i'); 
         } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
             $("#mobile-nav, #mobile-nav-toggle").hide();
         }
@@ -105,16 +106,10 @@
         // Header scroll class
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
-            $('#header').addClass('header-scrolled');
-            if ($('#nav-menu-container').length) {
-                $('#mobile-nav-toggle').addClass('header-scrolled-i'); 
-            }
-            
+            $('#header').addClass('header-scrolled'); 
             } else {
             $('#header').removeClass('header-scrolled');
-            if ($('#nav-menu-container').length) {
-                $('#mobile-nav-toggle').removeClass('header-scrolled-i'); 
-            }
+
             }
         });
 
@@ -162,6 +157,7 @@
         // Preloader
 		$('.preloader').fadeOut(500);
     });
+    
 })(jQuery);
 
 // Open the popup
@@ -183,4 +179,11 @@ document.querySelectorAll(".img-gal").forEach(function(element) {
         openPopup();
     });
 });
+var map = L.map('map').setView([31.443663538872407, 31.768183547339532], 14);
+googleStreets = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo(map);
+var marker = L.marker([31.443663538872407, 31.768183547339532]).addTo(map);
+marker.bindPopup("Our Main Office<br/>Damietta El-Gadeeda City,<br/>New Damietta Harbour Department,<br/> Damietta Governorate 8062001").openPopup();
 
