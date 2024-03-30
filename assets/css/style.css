@@ -1740,8 +1740,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-top-border {
     padding: 50px 0;
     padding-left: 50px;
-    border-top: 1px dotted #eee;
 }
+@media (max-width: 767.98px) {
+    .section-top-border {
+        padding: 50px 0;
+        padding-left: 0;
+    } 
+
+    
+}
+
+
 .switch-wrap {
     margin-bottom: 10px;
 }
@@ -3015,4 +3024,25 @@ h6 {
 
 .project-area{
     color: #000;
+}
+
+.Projects-area {
+    background: #131440;
+    color: #ffffff;
+}
+.data-area {
+    background: #131440;
+    padding: 50px 10px 50px;
+    color: #ffffff;
+}
+.data-area-w{
+    color: #000;
+    padding: 50px 50px 50px;
+}
+.text-right{
+    color: #000;
+    padding-bottom: 40px;
+}
+.img-fluid{
+    padding-bottom: 40px;
 }
