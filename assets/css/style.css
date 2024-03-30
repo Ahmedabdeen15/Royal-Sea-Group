@@ -1739,6 +1739,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .section-top-border {
     padding: 50px 0;
+    padding-left: 50px;
     border-top: 1px dotted #eee;
 }
 .switch-wrap {
@@ -2014,6 +2015,7 @@ h6 {
 .generic-blockquote {
     padding: 30px 50px 30px 30px;
     background: #fff;
+    color: #000;
     border-left: 2px solid #244cfd;
 }
 @media (max-width: 991px) {
