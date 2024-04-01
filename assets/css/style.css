@@ -496,12 +496,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     z-index: 1;
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .welcome-img img {
-        width: 100%;
-    }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 768px) {
     .welcome-img img {
         width: 100%;
     }
@@ -3043,6 +3038,57 @@ h6 {
     color: #000;
     padding-bottom: 40px;
 }
-.img-fluid{
+.image-about{
     padding-bottom: 40px;
 }
+.welcome-img-right {
+    position: relative;
+}
+
+.welcome-img-right img {
+    width: 120%;
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    z-index: 1;
+}
+
+@media (min-width: 768.98px) and (max-width: 1024px) {
+    .welcome-img-right img {
+        width: 120%;
+        top: -150px;
+    }
+}
+@media (max-width: 768px) {
+    .welcome-img-right img {
+        display: none;
+    }
+}
+
+
+.welcome-text-left {
+    padding: 100px;
+    border: 10px solid #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+.welcome-text-left h2 {
+    color: #ffffff;
+}
+
+.welcome-text-left p {
+    color: #ffffff;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .welcome-text-left {
+        padding: 50px;
+    }
+}
+@media (max-width: 575.98px) {
+    .welcome-text-left {
+        padding: 40px 20px;
+    }
+}
+
