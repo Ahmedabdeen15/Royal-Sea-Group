@@ -3471,26 +3471,24 @@ h6 {
 
 @media (max-width: 1198px) {
     .single-footer-image {
-        max-width: 33.3%;
-        padding-left: 70px;
         padding-bottom: 20px;
     }
 
     #map {
-        height: 300px;
-        width: 400px;
+        height: 250px;
+        width: 300px;
     }
 
     .map-footer {
-        padding-left: 280px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-left: 76px;
     }
 
     .links-section {
         display: none;
     }
-
+    .empty-section {
+        display: none;
+    }
     .links-section-mobile {
         display: block;
     }
@@ -3498,13 +3496,26 @@ h6 {
 
 @media (max-width: 991px) {
     .single-footer-image {
+        max-width: 33.3%;
         padding-bottom: 10px;
         padding-left: 33px;
 
     }
-
+    .footer-area .col-xl-6.col-md-7{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .empty-section {
+        display: block;
+    }
     .map-footer {
         padding-left: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #map {
+        height: 300px;
+        width: 400px;
     }
 }
 
