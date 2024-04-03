@@ -107,9 +107,6 @@
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
             $('#header').addClass('header-scrolled'); 
-            } else {
-            $('#header').removeClass('header-scrolled');
-
             }
         });
 
@@ -210,5 +207,6 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo(map);
 var marker = L.marker([31.443663538872407, 31.768183547339532]).addTo(map);
-marker.bindPopup("Our Main Office<br/>Damietta El-Gadeeda City,<br/>New Damietta Harbour Department,<br/> Damietta Governorate 8062001").openPopup();
+marker.bindPopup("Our Main Office<br/>Damietta El-Gadeeda City,<br/>New Damietta Harbour Department,<br/>administrative room next to<br/> the Shipping Chamber building").openPopup();
 
+//ميناء دمياط ، الغرفه الادارية بجوار مبنى غرفة الملاحة

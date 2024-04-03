@@ -495,7 +495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-    padding: 250px 0 150px;
+    padding: 200px 0 150px;
     background-color: #b0b0b0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-bg.jpg");
     background-repeat: no-repeat;
@@ -3670,4 +3670,6 @@ h6 {
 .banner-area.about-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/welcome.png");
 }
-
+.banner-area.Contact-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/welcome.png");
+}
