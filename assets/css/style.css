@@ -525,7 +525,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 .feature-area {
     background: #131440;
 }
-
+#Feature-Area img{
+    display: inline;
+    width: auto;
+}
 .single-feature {
     background: #131440;
     border: 3px solid #ffffff;
@@ -538,30 +541,38 @@ body.mobile-nav-active #mobile-nav-toggle {
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    min-height: 450px
+    min-height: 400px
 }
 
 @media (max-width: 1200px) {
     .single-feature {
-        min-height: 470px
+        min-height: 450px
     }
 
 }
 
-@media (max-width: 968px) {
+
+
+@media (max-width: 767.98px) {
     .single-feature {
-        min-height: 381px
+        min-height: 420px;
+        margin : 0 10px;
     }
 
 }
-
-@media (max-width: 770px) {
+@media (max-width: 576.98px) {
     .single-feature {
-        min-height: 0
+        min-height: 390px;
+        margin : 0 50px;
     }
 
 }
+@media (max-width: 375.98px) {
+    .single-feature {
+        margin : 0 20px;
+    }
 
+}
 
 .single-feature img {
     margin-bottom: 40px;
@@ -3581,10 +3592,7 @@ h6 {
     color: #000;
 }
 
-.Projects-area {
-    background: #131440;
-    color: #ffffff;
-}
+
 
 .data-area {
     background: #131440;
@@ -3662,3 +3670,4 @@ h6 {
 .banner-area.about-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/welcome.png");
 }
+

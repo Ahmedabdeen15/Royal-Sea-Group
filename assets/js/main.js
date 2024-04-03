@@ -113,7 +113,32 @@
             }
         });
 
-
+        // Feature Slider
+        $('#Feature-Area').owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            nav: false,
+            dots: true,
+            smartSpeed: 1000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                }
+            }
+        });
         // Department Slider
         $('.Projects-slider').owlCarousel({
             loop: true,
@@ -123,7 +148,7 @@
             autoplayHoverPause: true,
             nav: false,
             dots: true,
-            smartSpeed: 2000,
+            smartSpeed: 1000,
             responsiveClass: true,
             responsive: {
                 0: {
