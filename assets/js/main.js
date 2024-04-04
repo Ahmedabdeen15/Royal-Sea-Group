@@ -199,6 +199,11 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
 }).addTo(map);
 var marker = L.marker([31.443663538872407, 31.768183547339532]).addTo(map);
-marker.bindPopup("Our Main Office<br/>Damietta El-Gadeeda City,<br/>New Damietta Harbour Department,<br/>administrative room next to<br/> the Shipping Chamber building").openPopup();
+var language = window.location.href.endsWith('-ar.html') ? 'ar' : 'en';
+var popupContent = language === 'ar' ? "مقرنا الرئيسي<br/>ميناء دمياط ، الغرفه الادارية بجوار مبنى غرفة الملاحة": "Our Main Office<br/>Damietta El-Gadeeda City,<br/>New Damietta Harbour Department,<br/>administrative room next to<br/> the Shipping Chamber building";
+
+marker.bindPopup(popupContent).openPopup();
+
+
 
 //ميناء دمياط ، الغرفه الادارية بجوار مبنى غرفة الملاحة

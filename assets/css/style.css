@@ -503,6 +503,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover;
     position: relative;
 }
+section.banner-area > div.container > div.row {
+    justify-content: flex-end;
+}
+
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .banner-area {
@@ -548,7 +552,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     .single-feature {
         min-height: 450px
     }
-
+.single-feature-ar{
+    min-height: 380px
+}
 }
 
 
@@ -1671,52 +1677,8 @@ h3 {
     }
 }
 
-.comment-form .form-control {
-    padding: 8px 20px;
-    background: #fff;
-    border: none;
-    border-radius: 0px;
-    width: 100%;
-    font-size: 14px;
-    color: #777777;
-    border: 1px solid transparent;
-}
 
-.comment-form .form-control:focus {
-    box-shadow: none;
-    border: 1px solid #eee;
-}
 
-.comment-form textarea.form-control {
-    height: 140px;
-    resize: none;
-}
-
-.comment-form ::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #777;
-}
-
-.comment-form ::-moz-placeholder {
-    font-size: 13px;
-    color: #777;
-}
-
-.comment-form :-ms-input-placeholder {
-    font-size: 13px;
-    color: #777;
-}
-
-.comment-form :-moz-placeholder {
-    font-size: 13px;
-    color: #777;
-}
-
-#mapBox {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-}
 
 .info-text h3 {
     text-transform: inherit;
@@ -3513,7 +3475,7 @@ h6 {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    #map {
+    #map  {
         height: 300px;
         width: 400px;
     }
@@ -3683,4 +3645,10 @@ h6 {
 }
 .banner-area.Contact-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/banner-bg-Contact.jpg");
+}
+.arabic{
+    font-size: 1rem;
+    text-align:right;
+    font-weight: 500;
+    
 }
