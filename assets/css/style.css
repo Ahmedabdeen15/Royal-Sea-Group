@@ -206,7 +206,9 @@ textarea:focus {
     text-transform: uppercase;
     outline: none;
 }
-
+.nav-menu-ar a{
+    font-size: 1.2rem;
+}
 .nav-menu>li {
     margin-left: 15px;
 }
@@ -503,7 +505,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover;
     position: relative;
 }
-section.banner-area > div.container > div.row {
+section.banner-area-ar > div.container > div.row,.section-padding.contact-form-ar > div.container > div.row,section.contact-form.section-padding.section-padding3.contact-form-ar > div.container > div.row > div.col-lg-3.mb-5.mb-lg-0 > div.d-flex {
     justify-content: flex-end;
 }
 
@@ -958,6 +960,8 @@ h3 {
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    font-size: .75rem ;
+
 }
 
 .footer-area a:hover {
@@ -3647,8 +3651,12 @@ h6 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/banner-bg-Contact.jpg");
 }
 .arabic{
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align:right;
     font-weight: 500;
-    
+font-family: "Geeza Pro", "Nadeem", "Al Bayan";
+}
+
+.h3-ar{
+    font-size: 1.4rem !important;
 }
