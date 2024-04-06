@@ -505,7 +505,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover;
     position: relative;
 }
-section.banner-area-ar > div.container > div.row,.section-padding.contact-form-ar > div.container > div.row,section.contact-form.section-padding.section-padding3.contact-form-ar > div.container > div.row > div.col-lg-3.mb-5.mb-lg-0 > div.d-flex {
+section.banner-area-ar > div.container > div.row,.section-padding.contact-form-ar > div.container > div.row,section.contact-form.section-padding.section-padding3.contact-form-ar > div.container > div.row > div.col-lg-3.mb-5.mb-lg-0 > div.d-flex,div.section-top-border > h3.title_color,
+div.section-top-border > div.row > div.col-lg-10 > div.generic-blockquote-ar,.just-left {
     justify-content: flex-end;
 }
 
@@ -941,6 +942,7 @@ h3 {
     color: #fff;
     background: #12151f;
     padding: 80px 0;
+    text-align:left;
 }
 
 @media (max-width: 767.98px) {
@@ -2050,7 +2052,7 @@ h3 {
 }
 
 .section-top-border {
-    padding: 50px 0;
+    padding: 50px;
     padding-left: 50px;
 }
 
@@ -2400,6 +2402,12 @@ h6 {
     border-left: 2px solid #244cfd;
 }
 
+.generic-blockquote-ar{
+    padding: 30px 30px 30px 50px;
+    background: #fff;
+    color: #000;
+    border-right: 2px solid #244cfd;
+}
 @media (max-width: 991px) {
     .progress-table-wrap {
         overflow-x: scroll;
@@ -3659,4 +3667,23 @@ font-family: "Geeza Pro", "Nadeem", "Al Bayan";
 
 .h3-ar{
     font-size: 1.4rem !important;
+}
+.welcome-text-ar{
+    padding: 150px 100px;
+}
+@media (max-width: 1024.98px){
+    .welcome-text-ar {
+        padding: 100px 100px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .welcome-text-ar {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .welcome-text-ar {
+        padding: 40px 20px;
+    }
 }
