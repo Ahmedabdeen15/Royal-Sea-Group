@@ -70,20 +70,32 @@ textarea:focus {
 }
 
 .spinner {
-    width: 40px;
-    height: 40px;
-    margin: 100px auto;
-    background-color: #244cfd;
-    border-radius: 100%;
-    -webkit-animation: sk-scaleout 1s infinite ease-in-out;
-    animation: sk-scaleout 1s infinite ease-in-out;
+    width: 500px;
+    height: 205px;
+    background-image:url("../images/logo/PRELOADER.png");
+    background-size: cover; /* or contain, depending on your image */
+    -webkit-animation: sk-scaleout 8s ease-in-out;
+    animation: sk-scaleout 8s ease-in-out;
 }
 
+@media (max-width: 576px){
+    .spinner {
+        width: 200px;
+        height: 82px;
+        background-image:url("../images/logo/logo.png");
+        background-size: cover; /* or contain, depending on your image */
+        -webkit-animation: sk-scaleout 8s ease-in-out;
+        animation: sk-scaleout 8s ease-in-out;
+    }
+}
 @-webkit-keyframes sk-scaleout {
     0% {
         -webkit-transform: scale(0);
     }
-
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
     100% {
         -webkit-transform: scale(1);
         opacity: 0;
@@ -95,10 +107,14 @@ textarea:focus {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
-
-    100% {
+    50%{
         -webkit-transform: scale(1);
         transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
         opacity: 0;
     }
 }
@@ -114,17 +130,21 @@ textarea:focus {
 }
 
 .preloader .spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    top: 36%;
+    left: 31%;
     margin: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    
 }
-
+@media (max-width: 576px){
+    .preloader .spinner {
+        position: fixed;
+        top: 36%;
+        left: 31%;
+        margin: 0;
+        
+    }
+}
 .nav-menu,
 .nav-menu * {
     margin: 0;
@@ -3603,7 +3623,7 @@ h6 {
 
 
 .welcome-text-left {
-    padding: 100px;
+    padding: 75px 100px;
     position: relative;
     z-index: 0;
 }

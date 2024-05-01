@@ -169,7 +169,7 @@
         // WOW JS
         new WOW().init();
         // Preloader
-        $('.preloader').fadeOut(500);
+        $('.preloader').fadeTo(8000, 0);
     });
 
 })(jQuery);
