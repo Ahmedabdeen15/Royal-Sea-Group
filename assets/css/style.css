@@ -489,7 +489,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         max-height: 40px;
     }
 }
-
+/**---------------banner-area--------------------**/
 .banner-area {
     padding: 200px 0 150px;
     position: relative;
@@ -528,7 +528,62 @@ div.section-top-border > div.row > div.col-lg-10 > div.generic-blockquote-ar,.ju
         padding: 200px 0;
     }
 }
+.banner-area.other-page {
+    padding: 220px 0 170px;
+}
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .banner-area.other-page {
+        padding: 250px 0 100px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-area.other-page {
+        padding: 250px 0 100px;
+    }
+}
+
+.banner-area.other-page a {
+    color: #ffffff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.banner-area.other-page a:hover {
+    color: #244cfd;
+}
+
+.blog_categorie_area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+/* Define the animation */
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+}
+
+/* Apply the animation to the text */
+.color-changing-text {
+    /**animation: colorChange 10s infinite;**/
+    mix-blend-mode: difference;
+    filter: drop-shadow(.05em .05em rgb(255, 123, 0));
+}
+.color-text-border{
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.644); /* width and color */
+}
+.logo-font{
+    font-family: 'Zekton Rg', sans-serif;
+}
+/**---------------banner-area-ended--------------------**/
 
 
 .feature-area {
@@ -1084,38 +1139,7 @@ h3 {
     background: linear-gradient(to right, #21a8f3, #5149c5);
 }
 
-.banner-area.other-page {
-    padding: 220px 0 170px;
-}
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .banner-area.other-page {
-        padding: 250px 0 100px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .banner-area.other-page {
-        padding: 250px 0 100px;
-    }
-}
-
-.banner-area.other-page a {
-    color: #ffffff;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.banner-area.other-page a:hover {
-    color: #244cfd;
-}
-
-.blog_categorie_area {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
 
 .categories_post {
     position: relative;
