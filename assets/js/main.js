@@ -204,6 +204,15 @@ var popupContent = language === 'ar' ? "مقرنا الرئيسي<br/>ميناء
 
 marker.bindPopup(popupContent).openPopup();
 
+var video = document.getElementById("background-video");
 
+// Check if the device is a mobile device
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Change video source for mobile
+    video.src = "assets/video/panner_video_480.mp4";
+}
+
+// Load the new video source
+video.load();
 
 //ميناء دمياط ، الغرفه الادارية بجوار مبنى غرفة الملاحة
